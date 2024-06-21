@@ -2,6 +2,8 @@
 
 This project implements a Variational Autoencoder (VAE) using TensorFlow/Keras for generating images based on the MNIST dataset. The VAE is a type of generative model that learns to represent high-dimensional data in a lower-dimensional latent space and generate new samples from this space.
 
+![image](https://github.com/shantanufuke/VAE-Image-Generation-MNIST/assets/104629474/d9f2c0d8-e90d-4a3a-980c-571201974472)
+
 ## Architecture Overview
 The Variational Autoencoder (VAE) architecture consists of two main components: the encoder and the decoder. These components work together to map input images into a latent space and then reconstruct images from this latent space.
 
