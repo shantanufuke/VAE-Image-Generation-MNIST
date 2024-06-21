@@ -8,8 +8,8 @@ The Variational Autoencoder (VAE) architecture consists of two main components: 
 ## 1. Encoder
 The encoder network takes an input image (typically from the MNIST dataset, which consists of grayscale images of handwritten digits) and maps it to a lower-dimensional latent space representation. The encoder consists of several layers of convolutional and dense (fully connected) neural network layers.
 
-- Input Layer: Accepts input images of size (28, 28, 1), where 1 denotes the single channel for grayscale.
--Convolutional Layers: The convolutional layers extract features from the input image. For example, the first convolutional layer applies 32 filters of size 3x3 with ReLU activation and a stride of 2, reducing the spatial dimensions.
+- **Input Layer:** Accepts input images of size (28, 28, 1), where 1 denotes the single channel for grayscale.
+- **Convolutional Layers:** The convolutional layers extract features from the input image. For example, the first convolutional layer applies 32 filters of size 3x3 with ReLU activation and a stride of 2, reducing the spatial dimensions.
 **Flatten Layer:** Flattens the output from the convolutional layers into a 1-dimensional vector.
 **Dense Layers:** Two dense layers follow the flattened output to map it to the mean (z_mean) and log variance (z_log_var) of the latent space distribution. These layers output vectors of size latent_dim, which is typically 2 in your case for easy visualization in 2D space.
 The encoder's output includes z_mean and z_log_var, which together define a Gaussian distribution in the latent space.
